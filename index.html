@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather</title>
+    <link rel="short icon" type="text/css" href="img/icon2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <main>
+        <div class="container">
+            <div class="contenido-time">
+                <span class="time"></span>
+                <div>
+                   <span id="country"></span>
+                   <span id="location"></span>
+                </div>
+            </div>
+            <div class="contenido">
+                <span id="temp"></span>
+                <span class="temp">º</span>
+            </div>
+        </div>
+
+        <div class="subContainer">
+            <h3>Weather Details</h3>
+            <div class="details">
+                <div class="item">
+                    <p>Temp</p>
+                    <span id="weather"></span>
+                </div>
+                <div class="item">
+                    <p>Cloud</p>
+                    <span id="cloud">   </span>
+                </div>
+                <div class="item">
+                    <p>Humity</p>
+                    <span id="humidity"></span>
+                </div>
+                <div class="item">
+                    <p>Pressure</p>
+                    <span id="pressure"></span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

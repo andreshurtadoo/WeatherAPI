@@ -1,0 +1,148 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+
+    /* background: rgb(169,214,229);
+    background: linear-gradient(180deg, rgba(169,214,229,1) 0%, rgba(0,88,134,1) 100%);  */
+
+    background: rgb(177,208,218);
+    background: linear-gradient(180deg, rgba(177,208,218,1) 0%, rgba(3,109,166,1) 100%); 
+    list-style: none;
+}
+
+main{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+}
+
+
+/* container */
+
+.container{
+    width: 70%;
+    max-height: 80vh;
+    background-image: url(img/img2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container > .contenido{
+    color: #333;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+}
+
+.container > .contenido-time{
+    color: #333;
+    position: relative;
+    top: 1rem;
+    left: 2rem;
+    font-size: 30px;
+}
+
+.subContainer{
+    width: 30%;
+    max-height: 80vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 0px 16px 0px rgba(63, 47, 47, 0.1);
+}
+
+h3{
+   border-bottom: 1px solid black;
+   padding: 10px;
+}
+ 
+
+/* data */
+#temp, .temp{
+    font-size: 70px;
+}
+
+#country, #location {
+    font-size: 30px;
+}
+
+.details{
+    display:list-item;    
+} 
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.details > .item > span{
+    position: relative;
+    top: 18px;     
+}  
+
+@media screen and (max-width:1100px){
+    main{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1000px){
+    .container>.contenido, .container>.contenido-time{
+        top: 4rem;
+    }
+}
+@media screen and (max-width:850px){
+    .container>.contenido, .container>.contenido-time{
+        top: 2rem;
+    }
+    main{
+        display: list-item;
+        max-width: 90%;
+        max-height: 90vh;
+    }
+    main > .container, main > .subContainer{
+        width: 100%;
+        padding: 0;
+    } 
+
+
+    .container{
+        height: 50vh;
+    }
+    .subContainer{
+        height: 30vh;
+    }
+  
+
+    .item{
+        display: list-item;
+    }
+    .details{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 430px){
+    #temp, .temp{
+        font-size: 50px;
+    }
+    .container > .contenido-time{
+        font-size: 20px;
+        top: 1rem;
+        left: 1rem;
+    }
+    #country, #location{
+        font-size: 25px;
+        top: 1rem;
+    }
+    .container > .contenido{
+       left: 1rem;
+       top: 1rem;
+    }
+}
